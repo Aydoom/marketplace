@@ -1,0 +1,22 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item {
+        padding-right: 15px;
+    }
+    &__link {
+        &::after {
+            content: "/";
+            position: relative;
+            margin-left: 15px;
+        }
+        &--active {
+            color: #B8B8CC;
+            &::after {
+                content: "";
+            }
+        }
+    }
+}

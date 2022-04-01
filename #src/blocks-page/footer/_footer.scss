@@ -1,0 +1,51 @@
+.footer {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        @media (max-width: 1140px) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (max-width: 1140px) {
+            margin-top: 50px;
+            flex-direction: row;
+        }
+        @media (max-width: 530px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__nav-serv {
+    }
+    &__payment {
+        align-self: flex-end;
+        @media (max-width: 530px) {
+            align-self: flex-start;
+            margin-bottom: 30px;
+        }
+    }
+    &__social {        
+        align-self: flex-start;
+    }
+    &__downline {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 12px;
+        color: #787885;
+    }
+}
+
+
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ СЕКЦИЙ **/
+@import "../../blocks-bem/nav-serv/_nav-serv.scss";
+@import "../../blocks-bem/payment/_payment.scss";
+@import "../../blocks-bem/social/_social.scss";

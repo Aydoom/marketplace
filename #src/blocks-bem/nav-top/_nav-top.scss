@@ -1,0 +1,29 @@
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    @media (max-width: 1170px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 32px;
+        @media (max-width: 1170px) {
+            padding-top: 30px;
+        }
+    }
+    &__link {
+        vertical-align: middle;
+        @media (max-width: 1170px) {
+            font-size: 24px;
+        }
+        &--active, &:hover {
+            padding-bottom: 5px;
+            border-bottom: 2px solid #5236FF;
+        }
+        &--accent {
+            color: #FF0741;
+        }
+    }
+}

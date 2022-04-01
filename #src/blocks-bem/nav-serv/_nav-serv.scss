@@ -1,0 +1,38 @@
+.nav-serv {
+    &__categories {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 475px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__category {
+        max-width: 185px;
+        margin-bottom: -16px;
+        @media (max-width: 475px) {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        color: #19191D;
+        padding-bottom: 25px;
+    }
+    &__link {
+        display: block;
+        font-size: 14px;
+        line-height: 19.6px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        color: #787885;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.raiting {
+    display: flex;
+    &__star {
+        margin-left: 3px;
+        margin-top: 1px;
+        &--empty {
+
+        }
+    }
+    &__value {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 6px;
+        color: #787885;
+    }
+    &__rewiew {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 14px;
+        color: #19191D;
+        text-decoration: underline;
+        margin-left: 6px;
+        &--empty {
+            text-decoration: none;
+        }
+    }
+}

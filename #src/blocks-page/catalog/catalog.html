@@ -1,0 +1,27 @@
+
+<div class="catalog">
+
+    <!-- begin breadcrumbs -->
+    <div class="catalog__headline">
+        @@include('../../blocks-bem/breadcrumbs/breadcrumbs.html')
+    </div>
+    <!-- end breadcrumbs -->
+
+    <h2 class="catalog__title">Электроника</h2>
+
+     <!-- begin catalog -->
+    <main class="catalog__body">
+        <ul class="catalog__list">
+            @@include('cards_row-1.html')
+            @@include('cards_row-2.html')
+            @@include('cards_row-3.html')
+        </ul>
+    </main>
+     <!-- end catalog -->
+
+    <!-- begin paginator -->
+    <div class="catalog__downline">
+        @@include('../../blocks-bem/pagination/pagination.html')    
+    </div>
+    <!-- end paginator -->
+</div>

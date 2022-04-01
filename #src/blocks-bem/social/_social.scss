@@ -1,0 +1,18 @@
+.social {
+    &__text {
+        font-size: 16px;
+        line-height: 16px;
+        color: #19191D;
+        font-weight: 500;
+        color: #19191D;
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: inline-block;
+        
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,115 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    padding: 0;
+    margin: 0;
+    &__title {
+        grid-row: 2;
+        padding: 16px 0;
+        margin: 0;
+    }
+    &__link {
+        
+        &--none {
+            color: #787885;
+        }
+    }
+    &__photo {
+        grid-row: 1;
+        width: 100%;
+    }
+    &__price {
+        grid-row: 3;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        color:#19191D;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 16px;
+        &-old {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 16px;
+            vertical-align: top;
+            color:#787885;
+            margin-left: 20px;
+            background-image: linear-gradient(
+                to right bottom, 
+                transparent 47%,
+                #787885 47%,
+                #787885 53%,
+                transparent 53%
+            );
+        }
+    }
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 2%;
+        padding: 5px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        &--sale {
+            color:#37833B;
+            background-color: #EBF7ED;
+        }
+        &--hit {
+            color: #C23564;
+            background-color: #FDEDF2;
+        }
+        &--credit {
+            color:#E08701;
+            background-color: #FFF5E6;
+        }
+        &--none {
+            grid-row: 2;
+            bottom: 0;
+            color: #19191D;
+        }
+    }
+    &__raiting {
+        grid-row: 4;
+        margin-bottom: 12px;
+    }
+    &__info {
+        grid-row: 5;
+        font-size: 15px;
+        line-height: 19.6px;
+        color: #787885;
+        margin-bottom: 20px;
+    }
+    &__controls {
+        display: flex;
+        align-items: center;
+        grid-row: 6;
+    }
+    &__btn {
+        padding: 14px 37px;
+        color:#fff;
+        background-color: #5236FF;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+        &--none {
+            background-color: transparent;
+            color: #B8B8CC;
+        }
+    }
+    &__image-btn {
+        margin-left: 25px;
+        &.active > .card__icon, &:hover > .card__icon {
+            stroke: #5236FF;
+        }
+    }
+    &__icon {
+        stroke: #B8B8CC;
+    }
+}
